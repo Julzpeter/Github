@@ -1,0 +1,27 @@
+#repos{
+  background-color: white;
+  border-radius: 6px;
+}
+#mycards{
+  height: 240px;
+}
+#btnuser{
+  width: 100%;
+  border-radius: 10px;
+}
+.card{
+    margin-bottom: 2%;
+}
+  body {
+    background: #66FCF1;
+    background: linear-gradient #66FCF1;
+  }
+  #mycards{
+  height: 240px;
+}
+#one1{
+  background-color:#25343d;
+}
+p{
+  color:#e31c66;
+}
