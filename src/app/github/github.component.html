@@ -1,81 +1,77 @@
 <body id="one">
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
 
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="../../assets/images/avatar.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">{{user.name}}</p>
+
+            <button class="btn btn-primary" (click)="getRepos()">REPOs</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <br><br>
+
+      </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="../../assets/images/avatar.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">{{user.name}}</p>
-    
-          <button class="btn btn-primary" (click)="getRepos()">REPOs</button>
-        </div> 
-      </div> 
-    </div>
-  <div class="col-md-4 ">
     <br><br>
-  
-  </div>
-  </div>
-  <br><br>
     <div class="row">
       <div class="col-sm-4" *ngFor='let repo of result; let i = "index"'>
         <div id="mycards" class="card">
           <div class="card-body">
             <h3 class="card-title">{{repo.name}}</h3>
             <p class="card-text"><a href="{{repo.html_url}}">{{repo.html_url}}</a> <br> {{repo.description}} </p>
-    
-    
+
+
           </div>
         </div>
       </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-12" id="imageborder1">
-    <br>
-    <img id="image" src="{{user.avatar_url}}" alt="">
-    <p>UserName: {{user.login}}<br></p>
-    <br>
-    <p>Repository: <a href="https://github.com/Julzpeter">My Repos</a></p>
-
-    <br>
-
-  </div>
-</div>
-
-<div class="row">
-
-  <ul class="col-md-6" *ngFor='let usersearch of userArray; let i = "index"'>
-    <!-- image -->
-    <div id="imageborder">
-      <br>
-      <img id="image" src="{{user.search.avatar}}" alt="">
     </div>
-    <!-- username -->
-    <div id="info">
-      
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" id="imageborder1">
+      <br>
+      <img id="image" src="{{user.avatar_url}}" alt="">
+      <p>UserName: {{user.login}}<br></p>
+      <br>
+      <p>Repository: <a href="https://github.com/Julzpeter">My Repos</a></p>
+
       <br>
 
-      {{user.search.bio}}<br>
-      <br>
-
-      <p>Repository: <a target="_blank" href="{{user.search.html_url}}">{{user.search.repos_url}}</a></p>
-      <br>
     </div>
+  </div>
 
-  </ul>
+  <div class="row">
 
-</div>
+    <ul class="col-md-6" *ngFor='let usersearch of userArray; let i = "index"'>
+      <!-- image -->
+      <div id="imageborder">
+        <br>
+        <img id="image" src="{{user.search.avatar}}" alt="">
+      </div>
+      <!-- username -->
+      <div id="info">
+
+        <br>
+
+        {{user.search.bio}}<br>
+        <br>
+
+        <p>Repository: <a target="_blank" href="{{user.search.html_url}}">{{user.search.repos_url}}</a></p>
+        <br>
+      </div>
+
+    </ul>
+
+  </div>
 
 
 
 
 </body>
-
-
-
-
