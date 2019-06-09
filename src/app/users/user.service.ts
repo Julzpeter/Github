@@ -40,8 +40,8 @@ return promise;
   }
   
 
-  constructor(private http: HttpClient)
-   {this.user = new User('',0,'','')
+  constructor(private http: HttpClient) {
+  this.user = new User('', 0, '', '')
 
-   }
+  }
 }
