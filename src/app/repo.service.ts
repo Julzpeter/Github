@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
-import { Repo} from './repo';
-import { environment} from '../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { Repo } from './repo';
+import { environment } from '../environments/environment';
 
 
 @Injectable({
@@ -13,33 +13,33 @@ export class RepoService {
   newRepo: any;
 
 
-  constructor(private http: HttpClient) { 
-    this.repo = new Repo("",0,"","");
+  constructor(private http: HttpClient) {
+    this.repo = new Repo("", 0, "", "");
     console.log('works');
   }
 
-  repoRequest(){
-    interface ApiResponse{
+  repoRequest() {
+    interface ApiResponse {
       name: string;
       id: number;
       html_url: string;
       description: string;
     }
-  
-    const promise = new Promise ((resolve, reject)=>{
+
+    const promise = new Promise((resolve, reject) => {
       this.http.get<ApiResponse>(environment.apiGithub).toPromise().then(
 
-        (response)=>{
+        (response) => {
           this.repo.name = response.name;
           this.repo.id = response.id;
           this.repo.html_url = response.html_url;
           this.repo.description = response.description;
-          this.newRepo=response;
-          console.log (this.repo);
+          this.newRepo = response;
+          console.log(this.repo);
           console.log('xc');
           resolve();
         },
-        (error)=>{
+        (error) => {
           alert('error');
           reject(error);
         }
