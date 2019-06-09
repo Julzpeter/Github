@@ -6,9 +6,9 @@ import { CommonModule} from '@angular/common';
 
 
 const routes: Routes = [
-  { path: 'github',component: GithubComponent},
-  {path: 'search', component: SearchComponent},
-  { path: "",redirectTo: "/github",pathMatch:"full"}
+  { path: 'github', component: GithubComponent },
+  { path: 'search', component: SearchComponent },
+  { path: "", redirectTo: "/github", pathMatch: "full" }
 ];
 
 @NgModule({
