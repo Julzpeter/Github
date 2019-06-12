@@ -31,13 +31,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
  |   Behavior         |   Input             |  Output                |
  |--------------------|---------------------|------------------------|
- |Add a quote         |  type a quote       |  outputs user's quote  |
+ |View my repo        |                     |                        |
  |--------------------|---------------------|------------------------|               
- | Upvote             |  click to upvote    |  upvotes the quote     |
+ | Search for users   |  username           |  outputs users         |
  |--------------------|---------------------|------------------------|
- | Downvote           | click to downvote   |   downvotes the quote  |  
+ | Get the user repo  |  click to get repos |  outputs users repos   |  
  |--------------------|---------------------|------------------------|
- | Delete  a quote    |  click to delete    | deletes the quote      |
+
 
  ## Author
 Juliet Koech 
