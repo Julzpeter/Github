@@ -32,11 +32,19 @@ To get more help on the Angular CLI use ng help or go check out the Angular CLI 
  |   Behavior         |   Input             |  Output                |
  |--------------------|---------------------|------------------------|
  |View my repo        |                     |                        |
+<<<<<<< HEAD
  |                    |                     |                        |               
  | Search for users   |  user name          |                        |
  |                    |                     |                        |
  | Get the user repos | click to get repos  |   outputs users repos  |  
  
+=======
+ |--------------------|---------------------|------------------------|               
+ | Search for users   |  username           |  outputs users         |
+ |--------------------|---------------------|------------------------|
+ | Get the user repo  |  click to get repos |  outputs users repos   |  
+ |--------------------|---------------------|------------------------|
+>>>>>>> cb34d35f907077fc687e35b4df770fab8eb02d6e
 
 
  ## Author
