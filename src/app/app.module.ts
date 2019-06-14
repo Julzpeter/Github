@@ -8,6 +8,7 @@ import { SearchComponent } from './search/search.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { DateAgoPipe } from './date-ago.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { DateAgoPipe } from './date-ago.pipe';
     GithubComponent,
     SearchComponent,
     DateAgoPipe,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
