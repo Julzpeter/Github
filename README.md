@@ -1,12 +1,12 @@
 # Github
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project was generated with Angular CLI(https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Getting Started
 
 1) Step 1: Download Angular and AngularCLI
-2) Step2: Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`. 
- 3) Step 3:Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2) Step2: Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module. 
+ 3) Step 3:Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
  4) Step 4: Visit my Github repository; Username: Julzpeter,and clone the following link: 
 
  ##Development server
@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
 
 ## Build
 
@@ -31,13 +31,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
  |   Behavior         |   Input             |  Output                |
  |--------------------|---------------------|------------------------|
- |Add a quote         |  type a quote       |  outputs user's quote  |
- |--------------------|---------------------|------------------------|               
- | Upvote             |  click to upvote    |  upvotes the quote     |
- |--------------------|---------------------|------------------------|
- | Downvote           | click to downvote   |   downvotes the quote  |  
- |--------------------|---------------------|------------------------|
- | Delete  a quote    |  click to delete    | deletes the quote      |
+ |View my repo        |                     |                        |
+ |                    |                     |                        |               
+ | Search for users   |  user name          |                        |
+ |                    |                     |                        |
+ | Get the user repos | click to get repos  |   outputs users repos  |  
+ 
+
 
  ## Author
 Juliet Koech 
