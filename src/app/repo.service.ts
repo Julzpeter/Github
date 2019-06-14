@@ -14,7 +14,7 @@ export class RepoService {
 
 
   constructor(private http: HttpClient) {
-    this.repo = new Repo("", 0, "", "");
+    this.repo = new Repo("", 0, "", "",new Date());
     console.log('works');
   }
 
