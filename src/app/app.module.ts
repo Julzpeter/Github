@@ -7,6 +7,7 @@ import { GithubComponent } from './github/github.component';
 import { SearchComponent } from './search/search.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { DateAgoPipe } from './date-ago.pipe';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     routingComponents,
     GithubComponent,
     SearchComponent,
+    DateAgoPipe,
   ],
   imports: [
     BrowserModule,
